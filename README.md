@@ -40,10 +40,10 @@ priority_levels = {
 
 ### 基本用法
 ```python
-from ast算法V4_1 import KnowledgeGraphParserV4_1
+from KnowledgeGraph_Expression_Parser import KnowledgeGraphParser
 
 # 创建解析器实例
-parser = KnowledgeGraphParserV4_1()
+parser = KnowledgeGraphParser()
 
 # 解析表达式
 expr = "A1^2+((B1*2-C1)/D1^(E+F)+G)*H-1"
@@ -58,7 +58,7 @@ print(json.dumps(kg_data, indent=2, ensure_ascii=False))
 import asyncio
 
 async def main():
-    parser = KnowledgeGraphParserV4_1()
+    parser = KnowledgeGraphParser()
     expr = "A+B*C"
     kg_data = parser.parse_to_kg(expr)
     
