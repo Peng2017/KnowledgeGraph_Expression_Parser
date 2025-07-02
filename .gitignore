@@ -1,0 +1,9 @@
+# Python 缓存目录
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 项目缓存目录 - 只保留目录结构，忽略文件内容
+.cache/*
+!.cache/
+!.cache/.gitkeep
